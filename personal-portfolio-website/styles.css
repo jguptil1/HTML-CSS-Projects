@@ -110,9 +110,14 @@ section a{
     gap: 1rem;
 }
 
+.about-contents p{
+    font-size: 1.1rem;
+}
+
 .anchor-text{
     color: var(--color-highlight);
     transition-duration: 200ms;
+    font-size: 1.1rem;
 }
 
 .anchor-text:hover {
@@ -120,7 +125,48 @@ section a{
 }
 
 .experience-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.experience-card{
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 6rem
+    gap: .5rem;
+}
+
+.card-column{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.tenure{
+    opacity: 0.4;
+    font-size: 0.8;
+}
+
+.tag p,
+.experience-card p{
+    font-size: .9rem;
+}
+
+.tag-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem .5rem;
+    color: var(--color-accent);
+}
+
+.tag{
+    padding: .25rem .5rem;
+    border-radius: .5rem;
+    background-color: rgba( 45,212, 191,.2);
+}
+
+.tag p{
+    font-size: .8rem;
 }
